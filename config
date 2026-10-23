@@ -18,3 +18,8 @@
     shp = stash pop
     sh = stash
     yolo = !git add -A && git commit -m \"$(curl -sL https://whatthecommit.com/index.txt)\" && git push -f origin main
+    sw = switch
+    swc = switch -c
+    main = switch main
+    up = submodule update --init --recursive --remote
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
