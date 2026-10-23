@@ -11,4 +11,6 @@
 [alias]
     l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
     a = add
-    c = commit
+    c = commit --verbose
+    cm = commit -m
+    s = !"git status --short && git diff --stat | tail -n 1"
