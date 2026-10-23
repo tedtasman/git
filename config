@@ -13,4 +13,7 @@
     a = add
     c = commit --verbose
     cm = commit -m
-    s = !"git status --short && git diff --stat | tail -n 1"
+    s = !git status --short && git diff --stat | tail -n 1
+    shp = stash pop
+    sh = stash
+    yolo = !git add -A && git commit -m \"$(curl -sL https://whatthecommit.com/index.txt)\" && git push -f origin main
