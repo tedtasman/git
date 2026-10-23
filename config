@@ -4,6 +4,7 @@
 	recurse = true
 [push]
 	recurseSubmodules = on-demand
+    autoSetupRemote = true
 [diff]
 	submodule = log
 [status]
