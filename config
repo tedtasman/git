@@ -17,7 +17,7 @@
     s = !git status --short && git diff --stat | tail -n 1
     shp = stash pop
     sh = stash
-    yolo = !git add . && git commit -m \"$(curl -sL https://whatthecommit.com/index.txt)\" && git push -f origin main
+    yolo = !git add . && git commit -m \"$(curl -sL https://whatthecommit.com/index.txt)\" && git push
     sw = switch
     swc = switch -c
     main = switch main
