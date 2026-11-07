@@ -14,13 +14,20 @@
     a = add
     c = commit --verbose
     cm = commit -m
+    cma = !git add * && git commit -m
     s = !git status --short && git diff --stat | tail -n 1
     shp = stash pop
     sh = stash
     yolo = "!git add . && { if ! git diff --cached --quiet; then git commit -m \"$(curl -sfL https://whatthecommit.com/index.txt || echo yolo)\" && git push -q && echo \"pushed, nice\"; else echo \"no\"; fi; }"
-    badyolo = "!git commit --amend -m \"redacted\" && git push -q --force-with-lease && echo \"sorry\""
+    badyolo = "!sorry=$(curl https://mybadbro.stevemccroskey.com) && git commit --amend -m \"$sorry\" && git push -q --force-with-lease"
     sw = switch
     swc = switch -c
     main = switch main
     up = submodule update --init --recursive --remote
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+    pu = push
+    pl = pull
+    amd = commit --amend
+    unstage = restore --staged
+    trash = reset --hard HEAD
+    soft = reset --soft HEAD
