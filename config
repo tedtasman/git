@@ -19,7 +19,7 @@
     shp = stash pop
     sh = stash
     yolo = "!git add . && { if ! git diff --cached --quiet; then git commit -m \"$(curl -sfL https://whatthecommit.com/index.txt || echo yolo)\" && git push -q && echo \"pushed, nice\"; else echo \"no\"; fi; }"
-    badyolo = "!sorry=$(curl https://mybadbro.stevemccroskey.com) && git commit --amend -m \"$sorry\" && git push -q --force-with-lease"
+    badyolo = "!sorry=$(curl -s https://mybadbro.stevemccroskey.com) && git commit --amend -m \"$sorry\" && git push -q --force-with-lease"
     sw = switch
     swc = switch -c
     main = switch main
